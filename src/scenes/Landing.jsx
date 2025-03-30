@@ -2,6 +2,7 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import profileImg from "../assets/1.png";
 
 
 const Landing = ({ setSelectedPage }) => {
@@ -20,15 +21,15 @@ const Landing = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-              src="assets/profile.png"
+              className=" rounded-t-full hover:filter hover:saturate-200 transition duration-500 z-10 w-100 h-100  max-w-[400px] md:max-w-[600px]"
+              src={profileImg}
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src="assets/profile-image.png"
+            className="rounded-t-full z-10  w-80 h-80 max-w-[400px] md:max-w-[600px]"
+            src={profileImg}
           />
         )}
       </div>
@@ -47,13 +48,13 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Jane {""}
+            Aygerim
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
               before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
-            >
-              Esper
-            </span>
+            ></span>
+
+{/* before:content-[url('your_image.png')]   content-[url('assets/brunsh.png'))]  */}
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
@@ -75,7 +76,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
+            className="bg-gradient-rainbow text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
