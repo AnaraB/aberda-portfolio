@@ -1,6 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 
+
 const Testimonials = () => {
   return (
     <section id="testimonials" className="pt-32 pb-16">
@@ -29,8 +30,8 @@ const Testimonials = () => {
       {/* TESTIMONIALS */}
       <div className="md:flex md:justify-between gap-8">
         <motion.div
-          className="mx-auto relative bg-blue max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person1"
+           className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
+           before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px]  before:bg-[url('/person-1.jpeg')]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -48,7 +49,7 @@ const Testimonials = () => {
 
         <motion.div
           className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person2"
+            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px]  before:bg-[url('/person-2.jpeg')]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -66,8 +67,8 @@ const Testimonials = () => {
         </motion.div>
 
         <motion.div
-          className="mx-auto relative bg-yellow max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person3"
+         className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
+         before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px]  before:bg-[url('/person-3.jpeg')]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

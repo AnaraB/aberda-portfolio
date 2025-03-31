@@ -1,16 +1,17 @@
-import githubFinder from "./assets/images/github_finder.jpeg";
-import gazetteer from "./assets/images/gazetter.jpeg";
-import companyDirectory from "./assets/images/companyDirectory.jpeg";
-import expenseTracker from "./assets/images/expenseTracker.jpeg";
-import reactPortfolio from "./assets/images/reactPortfolio.jpeg";
-import vendorDashboard from "./assets/images/vendorDashboard.jpeg";
+import project1 from "./assets/project-1.jpeg";
+import project2 from "./assets/project-2.jpeg";
+import project3 from "./assets/project-3.jpeg";
+import expenseTracker from "./assets/expenseTracker.jpeg";
+import recipeFinder from "./assets/recipeFinder.png";
+import project6 from "./assets/project-6.jpeg";
+import project7 from "./assets/project-7.jpeg";
 
 
 
-const projects = [
+export const projects = [
   {
     name: 'Company Directory',
-    image: companyDirectory,
+    image: project1,
     description:
       'A mobile-first, full-stack application to maintain a company personnel database',
     stack: ['JavaScript', 'PHP', 'MySQL', 'Bootstrap','XAMPP'],
@@ -19,7 +20,7 @@ const projects = [
   },
   {
     name: 'GitHub Profile Finder',
-    image: githubFinder,
+    image: project2,
     description:
       'Allows users to search for and view GitHub profiles and their repositories',
     stack: ['React','Tailwind CSS', 'REST API', 'Context API', 'Node.js'],
@@ -28,7 +29,7 @@ const projects = [
   },
   {
     name: 'Gazetteer',
-    image: gazetteer,
+    image: project3,
     description:
       'Map based,  full-stack, mobile-first app to provide information on countries',
     stack: ['JavaScript', 'AJAX', 'Bootstrap', 'JQuery', 'REST API', 'PHP', 'Leaflet', 'XAMPP'],
@@ -44,8 +45,8 @@ const projects = [
     livePreview: 'https://graphql-expense-tracker-dnei.onrender.com',
   },
   {
-    name: 'REACT portfolio',
-    image: reactPortfolio,
+    name: 'Recipe Finder App',
+    image: recipeFinder,
     description:
       'A React portfolio SPA website which showcases the front-end projects created during my edX bootcamp programm.',
     stack: ['Bootstrap', 'CSS', 'React', 'Node.js'],
@@ -54,7 +55,16 @@ const projects = [
   },
   {
     name: 'LIFYA Dashboard',
-    image: vendorDashboard,
+    image: project6,
+    description:
+      'Vendor dashboard for the LIFYA marketplace during a 6-month internship. Showcased expertise in TypeScript, GraphQL, and full-stack architecture. Configured the MERN stack, user auth implementation, fetched data from Shopify API, implemented role-based access control. Note: The application is in development. The repository is private. ',
+    stack: ['MERN', 'TypeScript', 'GraphQL', 'REST API', 'Passport.js', 'Bun.js', 'Redux', 'Shopify API'],
+    sourceCode: 'https://github.com/AnaraB?tab=repositories',
+    livePreview: 'https://github.com',
+  },
+  {
+    name: 'LIFYA Dashboard1',
+    image: project7,
     description:
       'Vendor dashboard for the LIFYA marketplace during a 6-month internship. Showcased expertise in TypeScript, GraphQL, and full-stack architecture. Configured the MERN stack, user auth implementation, fetched data from Shopify API, implemented role-based access control. Note: The application is in development. The repository is private. ',
     stack: ['MERN', 'TypeScript', 'GraphQL', 'REST API', 'Passport.js', 'Bun.js', 'Redux', 'Shopify API'],
@@ -63,7 +73,7 @@ const projects = [
   },
 ]
 
-const skills = [
+export const skills = [
   'HTML',
   'CSS',
   'JavaScript',
@@ -96,4 +106,4 @@ const skills = [
 ]
 
 
-export {  projects, skills }
+

@@ -2,7 +2,7 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import profileImg from "../assets/1.png";
+import profileImg from "../assets/profile-img.png";
 
 
 const Landing = ({ setSelectedPage }) => {
@@ -16,12 +16,13 @@ const Landing = ({ setSelectedPage }) => {
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
+            //frame arch behind the img
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
             before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
             <img
               alt="profile"
-              className=" rounded-t-full hover:filter hover:saturate-200 transition duration-500 z-10 w-100 h-100  max-w-[400px] md:max-w-[600px]"
+              className=" rounded-t-full hover:filter hover:saturate-150 transition duration-500 z-10 w-100 h-100  max-w-[400px] md:max-w-[600px]"
               src={profileImg}
             />
           </div>
@@ -48,13 +49,14 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Aygerim
+            Aygerim {""}
             <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
-              before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
-            ></span>
-
-{/* before:content-[url('your_image.png')]   content-[url('assets/brunsh.png'))]  */}
+              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 
+              before:bg-[url('/brush.png')] before:absolute before:-left-[10px] before:-top-[60px] before:z-[-1] before:w-[200px] before:h-[200px] 
+              before:bg-contain before:bg-no-repeat"
+            >
+              Berda
+            </span>
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
@@ -84,11 +86,11 @@ const Landing = ({ setSelectedPage }) => {
             Contact Me
           </AnchorLink>
           <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
+            className="rounded-r-sm bg-gradient-rainblue  py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+            <div className="bg-deep-blue  hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
               Let's talk.
             </div>
           </AnchorLink>
