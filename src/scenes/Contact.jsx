@@ -37,7 +37,7 @@ const Contact = () => {
             <span className="text-yellow">CONTACT ME</span> TO GET STARTED
           </p>
           <div className="flex md:justify-end my-5">
-            <LineGradient width="w-1/2" />
+            <LineGradient className="w-1/2" />
           </div>
         </div>
       </motion.div>
@@ -72,7 +72,7 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
+            action="https://formsubmit.co/a27aa90ead85b24755333bbc88df4f05"
             method="POST"
           >
             <input

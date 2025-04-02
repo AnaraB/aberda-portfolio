@@ -2,6 +2,7 @@
 @import "tailwindcss";
 
 @theme {
+  --color-deep-blue:#010026;
   --color-red: #DC4492;
   --color-blue: #2CBCE9;
   --color-yellow: #FDCC49;
@@ -32,13 +33,6 @@
  
 }
  
- /* @layer utilities {
-  .content-brush {
-    background-image: url('/brush.png'); 
-  }
-}   */
-
-
 
 html,
 body,

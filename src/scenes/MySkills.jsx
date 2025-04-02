@@ -1,7 +1,8 @@
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import skills from "../assets/skills-image.png"
+import skills from "../assets/skills-image.png";
+import { techSkillsList, collaborationList,  problemSolvingSkills} from "../portfolio";
 
 
 const MySkills = () => {
@@ -34,15 +35,11 @@ const MySkills = () => {
         <div className="mt-16 md:mt-0">
           {isAboveLarge ? (
             <div
-            //rectangular frame behind the img
+              //rectangular frame behind the img
               className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
               before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
             >
-              <img
-                alt="skills"
-                className="z-10"
-                src={skills}
-              />
+              <img alt="skills" className="z-10" src={skills} />
             </div>
           ) : (
             <img alt="skills" className="z-10" src={skills} />
@@ -73,11 +70,19 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
-          </p>
+          {/* <p className="mt-5">
+            HTML5, CSS3, JavaScript, TypeScript, React.js, Node.js, REST API, GraphQL, JQuery, Bootstrap, Tailwind CSS 
+          </p> */}
+          <ul className="mt-3 mx-auto flex flex-wrap justify-center">
+            {techSkillsList.map((skill, index) => (
+              <li
+                key={index}
+                className="m-1 px-3 py-1 text-sm text-grey hover:border-gray-400  border-gray-100 rounded-md  active:scale-95"
+              >
+                {skill}
+              </li>
+            ))}
+          </ul>
         </motion.div>
 
         {/* INNOVATIVE */}
@@ -96,17 +101,21 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Collaboration 
+                Collaboration
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
-          </p>
+          <ul className="mt-3 mx-auto flex flex-wrap justify-center">
+            {collaborationList.map((skill, index) => (
+              <li
+                key={index}
+                className="m-1 px-3 py-1 text-sm text-grey hover:border-gray-400  border-gray-100 rounded-md  active:scale-95"
+              >
+                {skill}
+              </li>
+            ))}
+          </ul>
         </motion.div>
         {/* IMAGINATIVE */}
         <motion.div
@@ -129,12 +138,16 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
-          </p>
+          <ul className="mt-3 mx-auto flex flex-wrap justify-center">
+            {problemSolvingSkills.map((skill, index) => (
+              <li
+                key={index}
+                className="m-1 px-3 py-1 text-sm text-grey hover:border-gray-400  border-gray-100 rounded-md  active:scale-95"
+              >
+                {skill}
+              </li>
+            ))}
+          </ul>
         </motion.div>
       </div>
     </section>

@@ -22,8 +22,7 @@ const Testimonials = () => {
         </p>
         <LineGradient width="mx-auto w-2/5" />
         <p className="mt-10">
-          Here's What People are Saying About My Work. Aliquam aliquet integer
-          ut fames odio in at. At magna ornare dictum lectus.
+          Here's What People are Saying About My Work. See full recommendation feedbacks on my LinkedIn profile.
         </p>
       </motion.div>
 
@@ -42,8 +41,8 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea.
+          <p className="text-center text-l">
+          Aygerim has been working extensively with APIs, databases, React, TypeScript, and GraphQL, showcasing remarkable skill and adaptability. Her work ethic, productivity, and leadership abilities have been exceptional
           </p>
         </motion.div>
 
@@ -60,9 +59,8 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
-            Aliquam aliquet integer ut fames odio in at. At magna ornare dictum
-            lectus.
+          <p className="text-center text-l">
+          Beyond her technical capabilities, Aygerim consistently brought a positive attitude to the team. She tackled challenges head-on and contributed immensely to the success of our project.
           </p>
         </motion.div>
 
@@ -79,8 +77,8 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
-            Fames odio in at. At magna ornare dictum lectus.
+          <p className="text-center text-l">
+          Aygerim’s commitment and problem-solving abilities ensured that the project was completed on time and to a high standard. Her capability to bridge the front and back end made her an invaluable asset to our team
           </p>
         </motion.div>
       </div>

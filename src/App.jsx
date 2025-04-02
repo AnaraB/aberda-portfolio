@@ -1,22 +1,3 @@
-// import { useState } from 'react'
-// import viteLogo from '/vite.svg'
-
-
-// function App() {
- 
-
-//   return (
-//     <div className='bg-gradient-rainbow ...'>
-//      <h1 className='text-6xl font-bold font-opensans'>Hello</h1>
-//      <p className='font-opensans'> Let us check the work I am doing right now</p>
-//      <p className='font-playfair'> Let us check the work I am doing right now</p>
-//     </div>
-    
-//   )
-// }
-
-// export default App
-
 import Navbar from "./scenes/Navbar";
 import Landing from "./scenes/Landing";
 import DotGroup from "./scenes/DotGroup";
