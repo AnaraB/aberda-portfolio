@@ -2,8 +2,11 @@ import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import skills from "../assets/skills-image.png";
-import { techSkillsList, collaborationList,  problemSolvingSkills} from "../portfolio";
-
+import {
+  techSkillsList,
+  collaborationList,
+  problemSolvingSkills,
+} from "../portfolio";
 
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -77,7 +80,7 @@ const MySkills = () => {
             {techSkillsList.map((skill, index) => (
               <li
                 key={index}
-                className="m-1 px-3 py-1 text-sm text-grey hover:border-gray-400  border-gray-100 rounded-md  active:scale-95"
+                className="m-1 px-3 py-1 text-sm text-grey border-none hover:text-blue"
               >
                 {skill}
               </li>
@@ -110,7 +113,7 @@ const MySkills = () => {
             {collaborationList.map((skill, index) => (
               <li
                 key={index}
-                className="m-1 px-3 py-1 text-sm text-grey hover:border-gray-400  border-gray-100 rounded-md  active:scale-95"
+                className="m-1 px-3 py-1 text-sm text-grey border-none hover:text-red"
               >
                 {skill}
               </li>
@@ -142,7 +145,7 @@ const MySkills = () => {
             {problemSolvingSkills.map((skill, index) => (
               <li
                 key={index}
-                className="m-1 px-3 py-1 text-sm text-grey hover:border-gray-400  border-gray-100 rounded-md  active:scale-95"
+                className="m-1 px-3 py-1 text-sm text-grey border-none hover:text-yellow"
               >
                 {skill}
               </li>
