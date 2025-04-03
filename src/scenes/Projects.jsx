@@ -1,7 +1,8 @@
-
 import { motion } from "framer-motion";
 import { projects } from "../portfolio";
 import Project from "../components/Project";
+import LineGradient from "../components/LineGradient";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 const container = {
   hidden: {},
@@ -12,11 +13,15 @@ const container = {
   },
 };
 
- 
 const Projects = () => {
+   const isAbove1020px = useMediaQuery("(min-width: 1020px) and (max-width: 1836px)");
+
   return (
-    <section id="projects" className="pt-48 pb-48">
+  
+    <section id="projects" className="mt-30 pb-10">
+       {isAbove1020px && <LineGradient pt="pt-40" />} 
       {/* HEADINGS */}
+
       <motion.div
         className="md:w-2/5 mx-auto text-center"
         initial="hidden"
@@ -28,16 +33,21 @@ const Projects = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <div>
+        <div className="pt-20">
           <p className="font-playfair font-semibold text-4xl">
             <span className="text-red">PRO</span>JECTS
           </p>
           <div className="flex justify-center mt-5">
-            <div className="h-1 w-2/3 bg-gradient-rainbow"></div>
+            <div className="h-1 w-2/3 sm:w-1/3 bg-gradient-rainbow"></div>
           </div>
         </div>
 
-        <p className="mt-10 mb-10">Here’s a collection of projects showcasing my journey as a full-stack developer. From frontend UI designs to full-stack applications with authentication and API integrations. Explore the live demos and source code below!</p>
+        <p className="mt-10 mb-10">
+          Here’s a collection of projects showcasing my journey as a frontend
+          web developer—from building React-based UIs to developing full-stack
+          applications with authentication and API integrations. Take a look at
+          my other portfolio projects,explore live demos and source code below!
+        </p>
       </motion.div>
 
       {/* PROJECTS */}

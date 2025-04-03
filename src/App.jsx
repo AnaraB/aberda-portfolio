@@ -28,8 +28,6 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
-
   return (
     <div className="app bg-deep-blue">
       <Navbar
@@ -53,7 +51,7 @@ function App() {
         </motion.div>
       </div>
 
-      <LineGradient />
+      <LineGradient pt="pt-50"/>
       <div className="w-5/6 mx-auto md:h-full ">
         <motion.div
           margin="0 0 -200px 0"
@@ -83,7 +81,7 @@ function App() {
           <Testimonials />
         </motion.div>
       </div>
-      <LineGradient />
+      <LineGradient pt="pt-100" />
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"

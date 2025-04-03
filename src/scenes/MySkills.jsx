@@ -156,7 +156,7 @@ const MySkills = () => {
             {problemSolvingSkills.map((skill, index) => (
               <li
                 key={index}
-                className="m-1 px-3 py-1 text-sm text-grey border-none hover:text-yellow"
+                className="m-1 px-2 py-1 text-sm text-grey border-none hover:text-yellow"
               >
                 {skill}
               </li>
