@@ -37,7 +37,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <p className="mt-10 mb-10">My frontend projects</p>
+        <p className="mt-10 mb-10">Here’s a collection of projects showcasing my journey as a full-stack developer. From frontend UI designs to full-stack applications with authentication and API integrations. Explore the live demos and source code below!</p>
       </motion.div>
 
       {/* PROJECTS */}
@@ -51,7 +51,7 @@ const Projects = () => {
         >
           {/* ROW 1 - Static Content */}
           <div className="flex justify-center text-center items-center p-10  bg-red max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
-            BEAUTIFUL USER INTERFACES
+            MOBILE RESPONSIVE
           </div>
 
           {projects.map((project, index) => (
