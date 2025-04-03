@@ -1,6 +1,7 @@
-//import LineGradient from "../components/LineGradient";
+
 import { motion } from "framer-motion";
 import { projects } from "../portfolio";
+import Project from "../components/Project";
 
 const container = {
   hidden: {},
@@ -11,34 +12,9 @@ const container = {
   },
 };
 
-const projectVariant = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1 },
-};
-
-const Project = ({ name, image }) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  // const projectTitle = name.split(" ").join("-").toLowerCase();
-
-  return (
-    <motion.div variants={projectVariant} className="relative">
-      <div className="w-full h-full flex items-center justify-center">
-        <div className={overlayStyles}>
-          <p className="text-2xl font-playfair">{name}</p>
-          <p className="mt-7">
-            Take a look at my projects that were build with React.js and Node.js
-          </p>
-        </div>
-        <img src={image} alt={name} />
-      </div>
-    </motion.div>
-  );
-};
-
+ 
 const Projects = () => {
   return (
-  
     <section id="projects" className="pt-48 pb-48">
       {/* HEADINGS */}
       <motion.div
@@ -54,17 +30,14 @@ const Projects = () => {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-         
             <span className="text-red">PRO</span>JECTS
           </p>
           <div className="flex justify-center mt-5">
             <div className="h-1 w-2/3 bg-gradient-rainbow"></div>
-            {/* <LineGradient width="w-2/3" /> */}
           </div>
         </div>
-        <p className="mt-10 mb-10">
-         Take a look at my React.js projects. 
-        </p>
+
+        <p className="mt-10 mb-10">My frontend projects</p>
       </motion.div>
 
       {/* PROJECTS */}
@@ -81,9 +54,15 @@ const Projects = () => {
             BEAUTIFUL USER INTERFACES
           </div>
 
-          {/* Dynamically Render Projects */}
           {projects.map((project, index) => (
-            <Project key={index} title={project.name} image={project.image} />
+            <Project
+              key={index}
+              name={project.name}
+              image={project.image}
+              stack={project.stack}
+              sourceCode={project.sourceCode}
+              livePreview={project.livePreview}
+            />
           ))}
 
           {/* ROW 3 - Static Content */}
@@ -97,5 +76,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-

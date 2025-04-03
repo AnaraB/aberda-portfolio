@@ -8,13 +8,13 @@ import fullStackPort from "./assets/full-stack-portfolio.jpeg";
 
 export const projects = [
   {
-    name: "Company Directory",
+    name: "Bootcamp Portfolio",
     image: reactPortfolio,
     description:
-      "A mobile-first, full-stack application to maintain a company personnel database",
-    stack: ["JavaScript", "PHP", "MySQL", "Bootstrap", "XAMPP"],
-    sourceCode: "https://github.com/AnaraB/companydirectory",
-    livePreview: "https://companydirectory.anara-berdalieva.co.uk/",
+      "Frontend project completed during edX bootcamp programm",
+    stack: ["JavaScript","CSS3", "Tailwind CSS", "React"],
+    sourceCode: "https://github.com/AnaraB/portfolio",
+    livePreview: "https://anara-berdalieva.co.uk/",
   },
   {
     name: "GitHub Profile Finder",
@@ -45,7 +45,7 @@ export const projects = [
     name: "LIFYA Dashboard",
     image: imgGenerator,
     description:
-      "Vendor dashboard for the LIFYA marketplace during a 6-month internship. Showcased expertise in TypeScript, GraphQL, and full-stack architecture. Configured the MERN stack, user auth implementation, fetched data from Shopify API, implemented role-based access control. Note: The application is in development. The repository is private. ",
+      "full-stack architecture. Configured the MERN stack, user auth implementation, fetched data from Shopify API, implemented role-based access control. Note: The application is in development. The repository is private. ",
     stack: [
       "MERN",
       "TypeScript",
@@ -91,7 +91,7 @@ export const projects = [
     name: "LIFYA Dashboard1",
     image: fullStackPort,
     description:
-      "Vendor dashboard for the LIFYA marketplace during a 6-month internship. Showcased expertise in TypeScript, GraphQL, and full-stack architecture. Configured the MERN stack, user auth implementation, fetched data from Shopify API, implemented role-based access control. Note: The application is in development. The repository is private. ",
+      "Vendor dashboard for the LIFYA marketplace. The repository is private. ",
     stack: [
       "MERN",
       "TypeScript",
