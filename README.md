@@ -1,13 +1,26 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio showcasing the projects I've built as a web developer. The portfolio is fully responsive and built using React, Tailwind CSS, Framer Motion, and React Hook Form. It highlights my skills in front-end development using the React framework but also displays my other portfolios where I showcase my full-stack development skills, including API integration, authentication, and data visualisation.
 
-Currently, two official plugins are available:
+🚀 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React – For building the UI and managing component-based architecture
 
-## Expanding the ESLint configuration
+Tailwind CSS – For efficient and responsive styling
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# aberda-portfolio
+Framer Motion – For smooth animations and transitions
+
+React Hook Form – For form handling with FormSubmit integration
+
+React Anchor Link Smooth Scroll – For smooth scrolling navigation
+
+Google Fonts – For custom typography
+
+
+🎨 Styling & Animations
+
+Tailwind CSS – Used for utility-first styling and responsiveness. Docs
+
+Framer Motion – Used for page transitions and smooth animations. Docs
+
+Google Fonts – Custom typography for a modern look. Google Fonts
