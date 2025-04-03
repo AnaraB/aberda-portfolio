@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const projectVariant = {
   hidden: { opacity: 0, scale: 0.8 },
@@ -7,15 +8,19 @@ const projectVariant = {
 
 
 const Project = ({ name, image, stack, sourceCode, livePreview }) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+
+const [isMobileOverlayVisible, setIsMobileOverlayVisible] = useState(false);
+
+const overlayStyles = `absolute h-full w-full bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue
+  transition-opacity duration-500 
+  opacity-0 hover:opacity-90 sm:${isMobileOverlayVisible ? "opacity-90" : "opacity-0"}`;
 
   return (
     <motion.div variants={projectVariant} className="relative group">
       {/* Image and Overlay */}
-      <div className="relative w-full h-full">
+      <div className="relative w-full h-full" onClick={() => setIsMobileOverlayVisible(!isMobileOverlayVisible)}>
         {/* Overlay (appears on hover) */}
-        <div
+        <div  
           className={overlayStyles}
         >
           <h3 className="text-xl font-playfair mb-4">{name}</h3>

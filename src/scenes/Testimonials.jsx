@@ -29,7 +29,7 @@ const Testimonials = () => {
       <div className="md:flex md:justify-between gap-8">
         <motion.div
           className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-           before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px]  before:bg-[url('/person-1.jpeg')]"
+           before:absolute before:top-[-120px] sm:before:top-[-90px] before:-ml-[110px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px]  before:bg-[url('/person-1.jpeg')]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -40,7 +40,7 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-l  md:text-sm">
+          <p className="text-center text-l md:text-sm">
             Aygerim has been working extensively with APIs, databases, React,
             TypeScript, and GraphQL, showcasing remarkable skill and
             adaptability. Her work ethic, productivity, and leadership abilities
@@ -50,7 +50,7 @@ const Testimonials = () => {
 
         <motion.div
           className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px]  before:bg-[url('/person-2.jpeg')]"
+            before:absolute before:top-[-120px] sm:before:top-[-90px] before:-ml-[110px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px]  before:bg-[url('/person-2.jpeg')]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -70,7 +70,7 @@ const Testimonials = () => {
 
         <motion.div
           className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-         before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px]  before:bg-[url('/person-3.jpeg')]"
+         before:absolute before:top-[-120px] sm:before:top-[-90px]  before:-ml-[110px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px]  before:bg-[url('/person-3.jpeg')]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
