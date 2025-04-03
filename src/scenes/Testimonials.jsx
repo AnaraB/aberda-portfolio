@@ -28,8 +28,8 @@ const Testimonials = () => {
       {/* TESTIMONIALS */}
       <div className="md:flex md:justify-between gap-8">
         <motion.div
-          className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-           before:absolute before:top-[-120px] sm:before:top-[-90px] before:-ml-[110px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px]  before:bg-[url('/person-1.jpeg')]"
+          className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-evenly p-10 mt-48
+           before:absolute before:top-[-120px]  before:-ml-[110px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px] max-md:before:top-[-140px]  before:bg-[url('/person-1.jpeg')]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -39,7 +39,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
+          <p className="font-playfair text-5xl">“</p>
           <p className="text-center text-l md:text-sm">
             Aygerim has been working extensively with APIs, databases, React,
             TypeScript, and GraphQL, showcasing remarkable skill and
@@ -49,8 +49,8 @@ const Testimonials = () => {
         </motion.div>
 
         <motion.div
-          className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] sm:before:top-[-90px] before:-ml-[110px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px]  before:bg-[url('/person-2.jpeg')]"
+          className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-evenly p-10 mt-48
+            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px] max-md:before:top-[-140px]  before:bg-[url('/person-2.jpeg')]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -60,7 +60,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
+          <p className="font-playfair text-5xl">“</p>
           <p className="text-center text-l md:text-sm">
             Beyond her technical capabilities, Aygerim consistently brought a
             positive attitude to the team. She tackled challenges head-on and
@@ -69,8 +69,8 @@ const Testimonials = () => {
         </motion.div>
 
         <motion.div
-          className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-         before:absolute before:top-[-120px] sm:before:top-[-90px]  before:-ml-[110px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px]  before:bg-[url('/person-3.jpeg')]"
+          className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col  p-10 mt-48 justify-evenly
+         before:absolute before:top-[-120px]  before:-ml-[100px] before:left-1/2 before:rounded-full before:bg-cover before:bg-center before:w-[220px] before:h-[220px] max-md:before:top-[-140px] before:bg-[url('/person-3.jpeg')]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -80,7 +80,8 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
+          <p className="font-playfair text-5xl">“</p>
+
           <p className="text-center text-l md:text-sm">
             Aygerim’s commitment and problem-solving abilities ensured that the
             project was completed on time and to a high standard. Her capability
