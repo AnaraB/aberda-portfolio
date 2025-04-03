@@ -1,4 +1,4 @@
-import LineGradient from "../components/LineGradient";
+//import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import skills from "../assets/skills-image.png";
@@ -28,11 +28,25 @@ const MySkills = () => {
           <p className="font-playfair font-semibold text-4xl mb-5">
             MY <span className="text-red">SKILLS</span>
           </p>
-          <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
-          </p>
+          <div className="h-0.5 w-1/3 bg-gradient-rainbow"></div>
+          {/* <LineGradient width="w-1/3" /> */}
+          {/* Quotes Section */}
+          <div className="mt-10 space-y-7 text-lg leading-relaxed text-gray-700">
+            <p className="relative italic text-xl font-light before:content-['“'] before:text-5xl before:text-red before:absolute before:-top-3 before:-left-6">
+              The expert in anything was once a beginner.
+              <span className="block mt-2 text-right text-sm font-semibold text-gray-500">
+                — Helen Hayes
+              </span>
+            </p>
+
+            <p className="relative italic text-xl font-light before:content-['“'] before:text-5xl before:text-red before:absolute before:-top-3 before:-left-6">
+              Great things in business are never done by one person; they’re
+              done by a team of people.
+              <span className="block mt-2 text-right text-sm font-semibold text-gray-500">
+                — Steve Jobs
+              </span>
+            </p>
+          </div>
         </motion.div>
 
         <div className="mt-16 md:mt-0">
@@ -52,7 +66,7 @@ const MySkills = () => {
 
       {/* SKILLS */}
       <div className="md:flex md:justify-between mt-16 gap-32">
-        {/* EXPERIENCE */}
+        {/* Technical Skills */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -68,14 +82,11 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Technical skills
+                Tech Tools
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
-          {/* <p className="mt-5">
-            HTML5, CSS3, JavaScript, TypeScript, React.js, Node.js, REST API, GraphQL, JQuery, Bootstrap, Tailwind CSS 
-          </p> */}
           <ul className="mt-3 mx-auto flex flex-wrap justify-center">
             {techSkillsList.map((skill, index) => (
               <li
@@ -88,7 +99,7 @@ const MySkills = () => {
           </ul>
         </motion.div>
 
-        {/* INNOVATIVE */}
+        {/* Collaboration */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -120,7 +131,7 @@ const MySkills = () => {
             ))}
           </ul>
         </motion.div>
-        {/* IMAGINATIVE */}
+        {/* Problem-solving */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"

@@ -28,6 +28,8 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+
   return (
     <div className="app bg-deep-blue">
       <Navbar
@@ -50,6 +52,7 @@ function App() {
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
       </div>
+
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full ">
         <motion.div
@@ -96,4 +99,3 @@ function App() {
 }
 
 export default App;
-

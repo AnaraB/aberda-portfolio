@@ -1,7 +1,6 @@
-import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import contactImg from "../assets/contact-image.jpg"
+import contactImg from "../assets/contact-image.jpg";
 
 const Contact = () => {
   const {
@@ -37,7 +36,7 @@ const Contact = () => {
             <span className="text-yellow">CONTACT ME</span> TO GET STARTED
           </p>
           <div className="flex md:justify-end my-5">
-            <LineGradient className="w-1/2" />
+            <div className="h-0.5 w-1/2 bg-gradient-rainbow"></div>
           </div>
         </div>
       </motion.div>
